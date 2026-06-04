@@ -6,33 +6,43 @@
 #
 adlfs==2023.10.0
     # via
+    #   -r requirements.in
     #   kedro-azureml
 aiofiles==24.1.0
     # via
+    #   -r requirements.in
     #   kedro-viz
 aiohappyeyeballs==2.6.1
     # via
+    #   -r requirements.in
     #   aiohttp
-aiohttp==3.13.5
+aiohttp==3.14.0
     # via
+    #   -r requirements.in
     #   adlfs
 aiosignal==1.4.0
     # via
+    #   -r requirements.in
     #   aiohttp
 annotated-doc==0.0.4
     # via
+    #   -r requirements.in
     #   fastapi
 annotated-types==0.7.0
     # via
+    #   -r requirements.in
     #   pydantic
 antlr4-python3-runtime==4.9.3
     # via
+    #   -r requirements.in
     #   omegaconf
 anyconfig==0.10.1
     # via
+    #   -r requirements.in
     #   kedro-docker
 anyio==3.7.1
     # via
+    #   -r requirements.in
     #   httpx
     #   jupyter-server
     #   litestar
@@ -41,43 +51,54 @@ anyio==3.7.1
     #   watchgod
 appdirs==1.4.4
     # via
+    #   -r requirements.in
     #   iterative-telemetry
     #   kedro-telemetry
 argon2-cffi==25.1.0
     # via
+    #   -r requirements.in
     #   jupyter-server
 argon2-cffi-bindings==25.1.0
     # via
+    #   -r requirements.in
     #   argon2-cffi
 arrow==1.3.0
     # via
+    #   -r requirements.in
     #   cookiecutter
     #   isoduration
 asgiref==3.11.0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation-asgi
 asttokens==3.0.0
     # via
+    #   -r requirements.in
     #   stack-data
 async-lru==2.0.5
     # via
+    #   -r requirements.in
     #   jupyterlab
 async-timeout==5.0.1
     # via -r requirements.in
 attrs==25.4.0
     # via
+    #   -r requirements.in
     #   aiohttp
     #   jsonschema
     #   kedro
     #   referencing
 azure-ai-ml==1.31.0
     # via
+    #   -r requirements.in
     #   kedro-azureml
 azure-common==1.1.28
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 azure-core==1.38.0
     # via
+    #   -r requirements.in
     #   adlfs
     #   azure-ai-ml
     #   azure-core-tracing-opentelemetry
@@ -92,95 +113,120 @@ azure-core==1.38.0
     #   msrest
 azure-core-tracing-opentelemetry==1.0.0b12
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 azure-datalake-store==0.0.53
     # via
+    #   -r requirements.in
     #   adlfs
 azure-identity==1.24.0
     # via
+    #   -r requirements.in
     #   adlfs
     #   azure-monitor-opentelemetry-exporter
     #   azureml-dataprep
 azure-mgmt-core==1.6.0
     # via
+    #   -r requirements.in
     #   azure-ai-ml
     #   mltable
 azure-monitor-opentelemetry==1.8.5
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 azure-monitor-opentelemetry-exporter==1.0.0b46
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 azure-storage-blob==12.27.1
     # via
+    #   -r requirements.in
     #   adlfs
     #   azure-ai-ml
     #   azure-storage-file-datalake
 azure-storage-file-datalake==12.17.0
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 azure-storage-file-share==12.19.0
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 azureml-dataprep[parquet]==5.1.6
     # via
+    #   -r requirements.in
     #   azureml-fsspec
     #   mltable
 azureml-dataprep-native==41.0.0
     # via
+    #   -r requirements.in
     #   azureml-dataprep
 azureml-dataprep-rslex==2.22.4
     # via
+    #   -r requirements.in
     #   azureml-dataprep
 azureml-fsspec==1.3.1
     # via -r requirements.in
 babel==2.17.0
     # via
+    #   -r requirements.in
     #   jupyterlab-server
 backoff==2.2.1
     # via
+    #   -r requirements.in
     #   kedro-azureml
 beautifulsoup4==4.13.5
     # via
+    #   -r requirements.in
     #   nbconvert
 binaryornot==0.4.4
     # via
+    #   -r requirements.in
     #   cookiecutter
 bleach[css]==6.3.0
     # via
+    #   -r requirements.in
     #   nbconvert
 blis==1.3.3
     # via
+    #   -r requirements.in
     #   thinc
 build==1.2.1
     # via
+    #   -r requirements.in
     #   kedro
 cachetools==5.5.2
     # via -r requirements.in
 catalogue==2.0.10
     # via
+    #   -r requirements.in
     #   spacy
     #   srsly
     #   thinc
 certifi==2024.7.4
     # via
+    #   -r requirements.in
     #   httpcore
     #   httpx
     #   msrest
     #   requests
 cffi==2.0.0
     # via
+    #   -r requirements.in
     #   argon2-cffi-bindings
     #   azure-datalake-store
     #   cryptography
 chardet==5.2.0
     # via
+    #   -r requirements.in
     #   binaryornot
 charset-normalizer==3.4.4
     # via
+    #   -r requirements.in
     #   requests
 click==8.3.3
     # via
+    #   -r requirements.in
     #   click-default-group
     #   cookiecutter
     #   kedro
@@ -192,38 +238,49 @@ click==8.3.3
     #   uvicorn
 click-default-group==1.2.4
     # via
+    #   -r requirements.in
     #   kedro-viz
 cloudpathlib==0.19.0
     # via
+    #   -r requirements.in
     #   weasel
 cloudpickle==2.2.1
     # via
+    #   -r requirements.in
     #   azureml-dataprep
     #   kedro-azureml
 colorama==0.4.6
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 comm==0.2.3
     # via
+    #   -r requirements.in
     #   ipykernel
 confection==0.1.5
     # via
+    #   -r requirements.in
     #   thinc
     #   weasel
 contourpy==1.3.0
     # via
+    #   -r requirements.in
     #   matplotlib
 cookiecutter==2.6.0
     # via
+    #   -r requirements.in
     #   kedro
 coverage[toml]==7.6.4
     # via
+    #   -r requirements.in
     #   pytest-cov
 cross-web==0.7.0
     # via
+    #   -r requirements.in
     #   strawberry-graphql
 cryptography==46.0.7
     # via
+    #   -r requirements.in
     #   azure-identity
     #   azure-storage-blob
     #   azure-storage-file-share
@@ -232,29 +289,37 @@ cryptography==46.0.7
     #   pyjwt
 cycler==0.12.1
     # via
+    #   -r requirements.in
     #   matplotlib
 cymem==2.0.11
     # via
+    #   -r requirements.in
     #   preshed
     #   spacy
     #   thinc
 debugpy==1.8.17
     # via
+    #   -r requirements.in
     #   ipykernel
 decorator==5.2.1
     # via
+    #   -r requirements.in
     #   ipython
 defusedxml==0.7.1
     # via
+    #   -r requirements.in
     #   nbconvert
 distro==1.9.0
     # via
+    #   -r requirements.in
     #   iterative-telemetry
 dnspython==2.8.0
     # via
+    #   -r requirements.in
     #   email-validator
 dynaconf==3.2.13
     # via
+    #   -r requirements.in
     #   evidently
     #   kedro
 email-validator==2.2.0
@@ -265,34 +330,43 @@ exceptiongroup==1.3.0
     # via -r requirements.in
 executing==2.2.1
     # via
+    #   -r requirements.in
     #   stack-data
 faker==37.8.0
     # via
+    #   -r requirements.in
     #   polyfactory
 fastapi==0.136.3
     # via
+    #   -r requirements.in
     #   kedro-fast-api
     #   kedro-viz
 fastapi-cli==0.0.5
     # via -r requirements.in
 fastjsonschema==2.21.2
     # via
+    #   -r requirements.in
     #   nbformat
 filelock==3.20.3
     # via
+    #   -r requirements.in
     #   iterative-telemetry
 fonttools==4.61.0
     # via
+    #   -r requirements.in
     #   matplotlib
 fqdn==1.5.1
     # via
+    #   -r requirements.in
     #   jsonschema
 frozenlist==1.8.0
     # via
+    #   -r requirements.in
     #   aiohttp
     #   aiosignal
 fsspec==2023.10.0
     # via
+    #   -r requirements.in
     #   adlfs
     #   azureml-fsspec
     #   evidently
@@ -300,32 +374,41 @@ fsspec==2023.10.0
     #   kedro-viz
 gitdb==4.0.12
     # via
+    #   -r requirements.in
     #   gitpython
 gitpython==3.1.50
     # via
+    #   -r requirements.in
     #   kedro
 graphql-core==3.2.6
     # via
+    #   -r requirements.in
     #   strawberry-graphql
 greenlet==3.2.4
     # via
+    #   -r requirements.in
     #   sqlalchemy
 h11==0.16.0
     # via
+    #   -r requirements.in
     #   httpcore
     #   uvicorn
 httpcore==1.0.9
     # via
+    #   -r requirements.in
     #   httpx
 httptools==0.6.3
     # via
+    #   -r requirements.in
     #   uvicorn
 httpx==0.28.1
     # via
+    #   -r requirements.in
     #   jupyterlab
     #   litestar
 idna==3.16
     # via
+    #   -r requirements.in
     #   anyio
     #   email-validator
     #   httpx
@@ -334,19 +417,24 @@ idna==3.16
     #   yarl
 importlib-metadata==8.7.0
     # via
+    #   -r requirements.in
     #   opentelemetry-api
 iniconfig==2.1.0
     # via
+    #   -r requirements.in
     #   pytest
 ipykernel==6.30.1
     # via
+    #   -r requirements.in
     #   jupyterlab
 ipython==8.37.0
     # via
+    #   -r requirements.in
     #   ipykernel
     #   kedro-viz
 isodate==0.7.2
     # via
+    #   -r requirements.in
     #   azure-ai-ml
     #   azure-storage-blob
     #   azure-storage-file-datalake
@@ -354,15 +442,19 @@ isodate==0.7.2
     #   msrest
 isoduration==20.11.0
     # via
+    #   -r requirements.in
     #   jsonschema
 iterative-telemetry==0.0.8
     # via
+    #   -r requirements.in
     #   evidently
 jedi==0.19.2
     # via
+    #   -r requirements.in
     #   ipython
 jinja2==3.1.6
     # via
+    #   -r requirements.in
     #   cookiecutter
     #   jupyter-server
     #   jupyterlab
@@ -371,16 +463,20 @@ jinja2==3.1.6
     #   spacy
 joblib==1.5.2
     # via
+    #   -r requirements.in
     #   nltk
     #   scikit-learn
 json5==0.12.1
     # via
+    #   -r requirements.in
     #   jupyterlab-server
 jsonpointer==3.0.0
     # via
+    #   -r requirements.in
     #   jsonschema
 jsonschema[format-nongpl]==4.25.1
     # via
+    #   -r requirements.in
     #   azure-ai-ml
     #   azureml-dataprep
     #   jupyter-events
@@ -389,14 +485,17 @@ jsonschema[format-nongpl]==4.25.1
     #   nbformat
 jsonschema-specifications==2025.9.1
     # via
+    #   -r requirements.in
     #   jsonschema
 jupyter-client==8.6.3
     # via
+    #   -r requirements.in
     #   ipykernel
     #   jupyter-server
     #   nbclient
 jupyter-core==5.8.1
     # via
+    #   -r requirements.in
     #   ipykernel
     #   jupyter-client
     #   jupyter-server
@@ -406,12 +505,15 @@ jupyter-core==5.8.1
     #   nbformat
 jupyter-events==0.12.0
     # via
+    #   -r requirements.in
     #   jupyter-server
 jupyter-lsp==2.3.0
     # via
+    #   -r requirements.in
     #   jupyterlab
 jupyter-server==2.18.2
     # via
+    #   -r requirements.in
     #   jupyter-lsp
     #   jupyterlab
     #   jupyterlab-server
@@ -419,19 +521,24 @@ jupyter-server==2.18.2
     #   notebook-shim
 jupyter-server-terminals==0.5.3
     # via
+    #   -r requirements.in
     #   jupyter-server
 jupyterlab==4.5.7
     # via
+    #   -r requirements.in
     #   notebook
 jupyterlab-pygments==0.3.0
     # via
+    #   -r requirements.in
     #   nbconvert
 jupyterlab-server==2.28.0
     # via
+    #   -r requirements.in
     #   jupyterlab
     #   notebook
 kedro==1.3.0
     # via
+    #   -r requirements.in
     #   kedro-azureml
     #   kedro-boot
     #   kedro-datasets
@@ -445,6 +552,7 @@ kedro-boot==0.3.0
     # via -r requirements.in
 kedro-datasets==9.3.0
     # via
+    #   -r requirements.in
     #   kedro-azureml
 kedro-docker==0.6.0
     # via -r requirements.in
@@ -452,124 +560,158 @@ kedro-fast-api==0.6.1
     # via -r requirements.in
 kedro-telemetry==0.7.0
     # via
+    #   -r requirements.in
     #   kedro
     #   kedro-viz
 kedro-viz==11.1.0
     # via -r requirements.in
 kiwisolver==1.4.7
     # via
+    #   -r requirements.in
     #   matplotlib
 langcodes==3.4.1
     # via
+    #   -r requirements.in
     #   spacy
 language-data==1.2.0
     # via
+    #   -r requirements.in
     #   langcodes
 lark==1.3.1
     # via
+    #   -r requirements.in
     #   rfc3987-syntax
 lazy-loader==0.4
     # via
+    #   -r requirements.in
     #   kedro-datasets
 litestar==2.21.1
     # via
+    #   -r requirements.in
     #   evidently
 litestar-htmx==0.5.0
     # via
+    #   -r requirements.in
     #   litestar
 marisa-trie==1.2.0
     # via
+    #   -r requirements.in
     #   language-data
 markdown-it-py==4.0.0
     # via
+    #   -r requirements.in
     #   rich
 markupsafe==3.0.3
     # via
+    #   -r requirements.in
     #   jinja2
     #   nbconvert
 marshmallow==3.26.2
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 matplotlib==3.9.4
     # via
+    #   -r requirements.in
     #   seaborn
 matplotlib-inline==0.1.7
     # via
+    #   -r requirements.in
     #   ipykernel
     #   ipython
 mdurl==0.1.2
     # via
+    #   -r requirements.in
     #   markdown-it-py
 mistune==3.2.1
     # via
+    #   -r requirements.in
     #   nbconvert
 mltable==1.6.1
     # via -r requirements.in
 more-itertools==10.7.0
     # via
+    #   -r requirements.in
     #   kedro
 msal==1.34.0
     # via
+    #   -r requirements.in
     #   azure-datalake-store
     #   azure-identity
     #   msal-extensions
 msal-extensions==1.3.1
     # via
+    #   -r requirements.in
     #   azure-identity
 msgspec==0.19.0
     # via
+    #   -r requirements.in
     #   litestar
 msrest==0.7.1
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry-exporter
     #   mltable
 multidict==6.7.0
     # via
+    #   -r requirements.in
     #   aiohttp
     #   litestar
     #   yarl
 multipart==1.3.1
     # via
+    #   -r requirements.in
     #   litestar
 murmurhash==1.0.10
     # via
+    #   -r requirements.in
     #   preshed
     #   spacy
     #   thinc
 mypy-extensions==1.1.0
     # via
+    #   -r requirements.in
     #   typing-inspect
 narwhals==2.15.0
     # via
+    #   -r requirements.in
     #   plotly
 nbclient==0.10.2
     # via
+    #   -r requirements.in
     #   nbconvert
 nbconvert==7.17.1
     # via
+    #   -r requirements.in
     #   jupyter-server
 nbformat==5.10.4
     # via
+    #   -r requirements.in
     #   jupyter-server
     #   nbclient
     #   nbconvert
 nest-asyncio==1.6.0
     # via
+    #   -r requirements.in
     #   ipykernel
 networkx==3.5
     # via
+    #   -r requirements.in
     #   kedro-viz
 nltk==3.9.4
     # via
+    #   -r requirements.in
     #   evidently
 notebook==7.5.6
     # via -r requirements.in
 notebook-shim==0.2.4
     # via
+    #   -r requirements.in
     #   jupyterlab
     #   notebook
 numpy==1.26.4
     # via
+    #   -r requirements.in
     #   blis
     #   contourpy
     #   evidently
@@ -584,12 +726,15 @@ numpy==1.26.4
     #   thinc
 oauthlib==3.3.1
     # via
+    #   -r requirements.in
     #   requests-oauthlib
 omegaconf==2.3.0
     # via
+    #   -r requirements.in
     #   kedro
 opentelemetry-api==1.39.0
     # via
+    #   -r requirements.in
     #   azure-core-tracing-opentelemetry
     #   azure-monitor-opentelemetry-exporter
     #   opentelemetry-instrumentation
@@ -607,6 +752,7 @@ opentelemetry-api==1.39.0
     #   opentelemetry-semantic-conventions
 opentelemetry-instrumentation==0.60b0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-dbapi
     #   opentelemetry-instrumentation-django
@@ -619,45 +765,58 @@ opentelemetry-instrumentation==0.60b0
     #   opentelemetry-instrumentation-wsgi
 opentelemetry-instrumentation-asgi==0.60b0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation-fastapi
 opentelemetry-instrumentation-dbapi==0.60b0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation-psycopg2
 opentelemetry-instrumentation-django==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-fastapi==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-flask==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-psycopg2==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-requests==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-urllib==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-urllib3==0.60b0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-instrumentation-wsgi==0.60b0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-flask
 opentelemetry-resource-detector-azure==0.1.5
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
 opentelemetry-sdk==1.39.0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry
     #   azure-monitor-opentelemetry-exporter
     #   opentelemetry-resource-detector-azure
 opentelemetry-semantic-conventions==0.60b0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-dbapi
@@ -671,6 +830,7 @@ opentelemetry-semantic-conventions==0.60b0
     #   opentelemetry-sdk
 opentelemetry-util-http==0.60b0
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
@@ -681,12 +841,15 @@ opentelemetry-util-http==0.60b0
     #   opentelemetry-instrumentation-wsgi
 orjson==3.11.7
     # via
+    #   -r requirements.in
     #   kedro-viz
 overrides==7.7.0
     # via
+    #   -r requirements.in
     #   jupyter-server
 packaging==25.0
     # via
+    #   -r requirements.in
     #   build
     #   ipykernel
     #   jupyter-events
@@ -710,46 +873,58 @@ packaging==25.0
     #   weasel
 pandas[parquet]==2.3.2
     # via
+    #   -r requirements.in
     #   evidently
     #   kedro-viz
     #   seaborn
     #   statsmodels
 pandocfilters==1.5.1
     # via
+    #   -r requirements.in
     #   nbconvert
 parse==1.20.2
     # via
+    #   -r requirements.in
     #   kedro
 parso==0.8.5
     # via
+    #   -r requirements.in
     #   jedi
 pathspec==0.12.1
     # via
+    #   -r requirements.in
     #   kedro-viz
 patsy==0.5.6
     # via
+    #   -r requirements.in
     #   statsmodels
 pexpect==4.9.0
     # via
+    #   -r requirements.in
     #   ipython
 pillow==12.2.0
     # via
+    #   -r requirements.in
     #   matplotlib
 platformdirs==4.5.0
     # via
+    #   -r requirements.in
     #   jupyter-core
     #   pytoolconfig
 plotly==6.3.0
     # via
+    #   -r requirements.in
     #   evidently
     #   kedro-viz
 pluggy==1.6.0
     # via
+    #   -r requirements.in
     #   kedro
     #   pytest
     #   pytest-cov
 polyfactory==2.22.2
     # via
+    #   -r requirements.in
     #   litestar
 portalocker==2.10.1
     # via -r requirements.in
@@ -757,39 +932,49 @@ pre-commit-hooks==5.0.0
     # via -r requirements.in
 preshed==3.0.9
     # via
+    #   -r requirements.in
     #   spacy
     #   thinc
 prometheus-client==0.23.1
     # via
+    #   -r requirements.in
     #   jupyter-server
 prompt-toolkit==3.0.52
     # via
+    #   -r requirements.in
     #   ipython
 propcache==0.4.1
     # via
+    #   -r requirements.in
     #   aiohttp
     #   yarl
 psutil==7.1.0
     # via
+    #   -r requirements.in
     #   azure-monitor-opentelemetry-exporter
     #   ipykernel
 ptyprocess==0.7.0
     # via
+    #   -r requirements.in
     #   pexpect
     #   terminado
 pure-eval==0.2.3
     # via
+    #   -r requirements.in
     #   stack-data
 pyarrow==24.0.0
     # via
+    #   -r requirements.in
     #   azureml-dataprep
     #   kedro-azureml
     #   pandas
 pycparser==2.23
     # via
+    #   -r requirements.in
     #   cffi
 pydantic==2.10.6
     # via
+    #   -r requirements.in
     #   confection
     #   evidently
     #   fastapi
@@ -800,31 +985,38 @@ pydantic==2.10.6
     #   weasel
 pydantic-core==2.27.2
     # via
+    #   -r requirements.in
     #   pydantic
 pydash==8.0.5
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 pygments==2.20.0
     # via
+    #   -r requirements.in
     #   ipython
     #   nbconvert
     #   pytest
     #   rich
 pyjwt[crypto]==2.13.0
     # via
+    #   -r requirements.in
     #   azure-ai-ml
     #   mltable
     #   msal
 pyparsing==3.2.0
     # via
+    #   -r requirements.in
     #   matplotlib
 pyproject-hooks==1.2.0
     # via
+    #   -r requirements.in
     #   build
 pysocks==1.7.1
     # via -r requirements.in
 pytest==9.0.3
     # via
+    #   -r requirements.in
     #   pytest-cov
     #   pytest-mock
 pytest-cov==6.3.0
@@ -833,6 +1025,7 @@ pytest-mock==2.0.0
     # via -r requirements.in
 python-dateutil==2.9.0.post0
     # via
+    #   -r requirements.in
     #   arrow
     #   jupyter-client
     #   matplotlib
@@ -842,25 +1035,31 @@ python-dateutil==2.9.0.post0
     #   strictyaml
 python-dotenv==1.2.2
     # via
+    #   -r requirements.in
     #   uvicorn
 python-json-logger==3.3.0
     # via
+    #   -r requirements.in
     #   jupyter-events
 python-multipart==0.0.28
     # via -r requirements.in
 python-slugify==8.0.4
     # via
+    #   -r requirements.in
     #   cookiecutter
 pytoolconfig[global]==1.3.1
     # via
+    #   -r requirements.in
     #   rope
 pytz==2025.2
     # via
+    #   -r requirements.in
     #   azureml-fsspec
     #   mltable
     #   pandas
 pyyaml==6.0.3
     # via
+    #   -r requirements.in
     #   azure-ai-ml
     #   azureml-dataprep
     #   cookiecutter
@@ -874,19 +1073,23 @@ pyyaml==6.0.3
     #   uvicorn
 pyzmq==27.1.0
     # via
+    #   -r requirements.in
     #   ipykernel
     #   jupyter-client
     #   jupyter-server
 referencing==0.36.2
     # via
+    #   -r requirements.in
     #   jsonschema
     #   jsonschema-specifications
     #   jupyter-events
 regex==2025.9.18
     # via
+    #   -r requirements.in
     #   nltk
 requests==2.33.0
     # via
+    #   -r requirements.in
     #   azure-core
     #   azure-datalake-store
     #   cookiecutter
@@ -901,20 +1104,25 @@ requests==2.33.0
     #   weasel
 requests-oauthlib==2.0.0
     # via
+    #   -r requirements.in
     #   msrest
 rfc3339-validator==0.1.4
     # via
+    #   -r requirements.in
     #   jsonschema
     #   jupyter-events
 rfc3986-validator==0.1.1
     # via
+    #   -r requirements.in
     #   jsonschema
     #   jupyter-events
 rfc3987-syntax==1.1.0
     # via
+    #   -r requirements.in
     #   jsonschema
 rich==14.1.0
     # via
+    #   -r requirements.in
     #   cookiecutter
     #   evidently
     #   kedro
@@ -923,26 +1131,32 @@ rich==14.1.0
     #   typer
 rich-click==1.9.1
     # via
+    #   -r requirements.in
     #   litestar
 rope==1.13.0
     # via -r requirements.in
 rpds-py==0.27.1
     # via
+    #   -r requirements.in
     #   jsonschema
     #   referencing
 ruamel-yaml==0.18.6
     # via
+    #   -r requirements.in
     #   pre-commit-hooks
 ruamel-yaml-clib==0.2.12
     # via
+    #   -r requirements.in
     #   ruamel-yaml
 ruff==0.5.7
     # via -r requirements.in
 scikit-learn==1.7.1
     # via
+    #   -r requirements.in
     #   evidently
 scipy==1.16.1
     # via
+    #   -r requirements.in
     #   evidently
     #   scikit-learn
     #   statsmodels
@@ -950,92 +1164,117 @@ seaborn==0.13.2
     # via -r requirements.in
 secure==0.3.0
     # via
+    #   -r requirements.in
     #   kedro-viz
 semver==2.13.0
     # via
+    #   -r requirements.in
     #   kedro-docker
 send2trash==1.8.3
     # via
+    #   -r requirements.in
     #   jupyter-server
 shellingham==1.5.4
     # via
+    #   -r requirements.in
     #   typer
 six==1.17.0
     # via
+    #   -r requirements.in
     #   patsy
     #   python-dateutil
     #   rfc3339-validator
 smart-open==7.0.4
     # via
+    #   -r requirements.in
     #   weasel
 smmap==5.0.2
     # via
+    #   -r requirements.in
     #   gitdb
 sniffio==1.3.1
     # via
+    #   -r requirements.in
     #   anyio
     #   litestar
 soupsieve==2.8
     # via
+    #   -r requirements.in
     #   beautifulsoup4
 spacy==3.8.2
     # via -r requirements.in
 spacy-legacy==3.0.12
     # via
+    #   -r requirements.in
     #   spacy
 spacy-loggers==1.0.5
     # via
+    #   -r requirements.in
     #   spacy
 sqlalchemy==2.0.44
     # via
+    #   -r requirements.in
     #   kedro-viz
 srsly==2.4.8
     # via
+    #   -r requirements.in
     #   confection
     #   spacy
     #   thinc
     #   weasel
 stack-data==0.6.3
     # via
+    #   -r requirements.in
     #   ipython
 starlette==1.1.0
     # via
+    #   -r requirements.in
     #   fastapi
 statsmodels==0.14.4
     # via
+    #   -r requirements.in
     #   evidently
 strawberry-graphql==0.316.0
     # via
+    #   -r requirements.in
     #   kedro-viz
 strictyaml==1.7.3
     # via
+    #   -r requirements.in
     #   azure-ai-ml
 tenacity==9.1.2
     # via -r requirements.in
 terminado==0.18.1
     # via
+    #   -r requirements.in
     #   jupyter-server
     #   jupyter-server-terminals
 text-unidecode==1.3
     # via
+    #   -r requirements.in
     #   python-slugify
 thinc==8.3.8
     # via
+    #   -r requirements.in
     #   spacy
 threadpoolctl==3.6.0
     # via
+    #   -r requirements.in
     #   scikit-learn
 tinycss2==1.4.0
     # via
+    #   -r requirements.in
     #   bleach
 tomli==2.2.1
     # via -r requirements.in
 tomli-w==1.2.0
     # via
+    #   -r requirements.in
     #   kedro
     #   kedro-telemetry
 tornado==6.5.5
     # via
+    #   -r requirements.in
     #   ipykernel
     #   jupyter-client
     #   jupyter-server
@@ -1044,11 +1283,13 @@ tornado==6.5.5
     #   terminado
 tqdm==4.67.1
     # via
+    #   -r requirements.in
     #   azure-ai-ml
     #   nltk
     #   spacy
 traitlets==5.14.3
     # via
+    #   -r requirements.in
     #   ipykernel
     #   ipython
     #   jupyter-client
@@ -1062,15 +1303,19 @@ traitlets==5.14.3
     #   nbformat
 typer==0.12.5
     # via
+    #   -r requirements.in
     #   evidently
     #   fastapi-cli
     #   spacy
     #   weasel
 types-python-dateutil==2.9.0.20250822
     # via
+    #   -r requirements.in
     #   arrow
 typing-extensions==4.15.0
     # via
+    #   -r requirements.in
+    #   aiohttp
     #   aiosignal
     #   azure-ai-ml
     #   azure-core
@@ -1101,73 +1346,92 @@ typing-extensions==4.15.0
     #   typing-inspection
 typing-inspect==0.9.0
     # via
+    #   -r requirements.in
     #   evidently
 typing-inspection==0.4.2
     # via
+    #   -r requirements.in
     #   fastapi
 tzdata==2025.2
     # via
+    #   -r requirements.in
     #   faker
     #   pandas
 uri-template==1.3.0
     # via
+    #   -r requirements.in
     #   jsonschema
 urllib3==2.7.0
     # via
+    #   -r requirements.in
     #   requests
 uvicorn[standard]==0.35.0
     # via
+    #   -r requirements.in
     #   evidently
     #   fastapi-cli
     #   kedro-fast-api
     #   kedro-viz
 uvloop==0.20.0
     # via
+    #   -r requirements.in
     #   uvicorn
 wasabi==1.1.3
     # via
+    #   -r requirements.in
     #   spacy
     #   thinc
     #   weasel
 watchdog==5.0.3
     # via
+    #   -r requirements.in
     #   evidently
 watchfiles==0.24.0
     # via
+    #   -r requirements.in
     #   kedro-viz
     #   uvicorn
 watchgod==0.8.2
     # via -r requirements.in
 wcwidth==0.2.14
     # via
+    #   -r requirements.in
     #   prompt-toolkit
 weasel==0.4.1
     # via
+    #   -r requirements.in
     #   spacy
 webcolors==24.11.1
     # via
+    #   -r requirements.in
     #   jsonschema
 webencodings==0.5.1
     # via
+    #   -r requirements.in
     #   bleach
     #   tinycss2
 websocket-client==1.8.0
     # via
+    #   -r requirements.in
     #   jupyter-server
 websockets==14.2
     # via
+    #   -r requirements.in
     #   uvicorn
 wrapt==1.17.3
     # via
+    #   -r requirements.in
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-dbapi
     #   opentelemetry-instrumentation-urllib3
     #   smart-open
 yarl==1.22.0
     # via
+    #   -r requirements.in
     #   aiohttp
 zipp==3.23.0
     # via
+    #   -r requirements.in
     #   importlib-metadata
 
 # The following packages are considered to be unsafe in a requirements file:

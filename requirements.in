@@ -207,7 +207,7 @@ weasel==0.4.1
 ## Web, API, and Networking
 aiohappyeyeballs==2.6.1
     # Happy Eyeballs (RFC 8305) for asyncio
-aiohttp==3.13.5
+aiohttp==3.14.0
     # Asynchronous HTTP client/server framework
 aiosignal==1.4.0
     # List of registered asynchronous signal handlers
