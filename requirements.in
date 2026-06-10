@@ -229,7 +229,7 @@ httpx==0.28.1
     # Next-generation HTTP client (sync and async)
 idna==3.16
     # Internationalized Domain Names in Applications (IDNA)
-litestar==2.21.1
+litestar==2.22.0
     # Production-ready ASGI framework (formerly Starlite)
 markupsafe==3.0.3
     # Safely escapes characters for HTML/XML
