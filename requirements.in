@@ -513,7 +513,7 @@ bleach==6.3.0
     # HTML sanitization library to prevent XSS attacks
 certifi==2024.7.4
     # Python package for providing Mozilla's CA Bundle
-cryptography==46.0.7
+cryptography==48.0.1
     # Recipes and primitives for cryptography
 defusedxml==0.7.1
     # XML parsers that prevent XML bomb and DTD attacks
