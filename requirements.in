@@ -509,7 +509,7 @@ argon2-cffi==25.1.0
     # Secure password hashing algorithm (Argon2) for Python
 argon2-cffi-bindings==25.1.0
     # Low-level CFFI bindings for Argon2
-bleach==6.3.0
+bleach==6.4.0
     # HTML sanitization library to prevent XSS attacks
 certifi==2024.7.4
     # Python package for providing Mozilla's CA Bundle
