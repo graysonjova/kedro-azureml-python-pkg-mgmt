@@ -150,3 +150,77 @@ source files for imports of the orphan's module(s).
 - Moved `pip install -r requirements.txt` before the audit step so site-packages
   are populated when `--scan-runtime` runs
 - Added `--scan-runtime` to the audit step's command
+
+---
+
+# Fix: 403 on "Create pull request" step
+
+## Problem
+
+```
+remote: Permission to Smith-S-S/kedro-azureml-python-pkg-mgmt.git denied to Smith-S-S.
+fatal: unable to access '.../': The requested URL returned error: 403
+```
+
+The push authenticated as a user account but was refused write access. Checkout
+succeeded (public repo = anonymous read is enough), so the failure is purely a
+write-credential problem, not a workflow-logic problem.
+
+Two contributing causes in the repo:
+
+1. `secrets.WORKFLOW_PAT` is missing, expired, or (if fine-grained) does not
+   grant `Contents: Read and write` on this repository. There is no fallback,
+   so an empty/weak secret silently degrades to a read-only push.
+2. The `Configure git credentials for container` step sets a **global**
+   `url."https://x-access-token:<PAT>@github.com/".insteadOf "https://github.com/"`.
+   It was added for the `container:` image, which is now commented out. It
+   rewrites every github.com URL to carry that PAT inline, which overrides the
+   credentials `actions/checkout` and `peter-evans/create-pull-request` configure
+   themselves — so an empty PAT turns every push anonymous.
+
+## Plan
+
+- [x] Remove the leftover container git-credentials step
+- [x] Fall back to the built-in `GITHUB_TOKEN` when `WORKFLOW_PAT` is unusable
+- [x] Add a preflight step that reports which token is in use and fails early
+      with an actionable message if it has no push access
+- [x] Add `workflow_dispatch` so the pipeline can be re-run without editing
+      `requirements.in`
+- [x] Fix exit codes swallowed by `| tee` (pip-compile conflicts were never
+      detected; smoke-test failures were always reported as passing)
+- [x] Document the token/settings requirements in README.md
+
+## Review
+
+### Changes made
+
+**`.github/workflows/update-requirements.yml`**
+- Added `workflow_dispatch` trigger — the pipeline can now be re-run manually
+  from the Actions tab instead of only on a `requirements.in` change
+- Replaced the `Configure git credentials for container` step with a
+  `Mark workspace as a safe git directory` step. The container needs the
+  `safe.directory` half of it, but the `url.insteadOf` half — which embedded the
+  PAT into every github.com URL — is what overrode the credentials the checkout
+  and PR actions configure, and is gone
+- `actions/checkout` and `peter-evans/create-pull-request` now use
+  `${{ secrets.WORKFLOW_PAT || github.token }}`; the job's `permissions:` block
+  already grants the built-in token `contents/pull-requests/issues: write`, so
+  the fallback path is fully functional
+- New `Check push credentials` preflight step right after checkout: prints which
+  token is in use, asks the API whether that token has push access, and fails
+  fast with a fix-it message if it does not
+- `Run pip-compile`: added `set -o pipefail` so a resolver conflict actually
+  marks the step as failed (previously `tee`'s exit code masked it, so the
+  "Open issue on conflict" and "Fail on conflict" steps never fired)
+- `Run kedro smoke tests`: exit code now read from `${PIPESTATUS[0]}` instead of
+  `$?` (which was `tee`'s status, always 0 — so the PR body always claimed the
+  smoke tests passed)
+- `Run requirements audit`: added `set +e` so the `exit_code` output is written
+  even when the audit script exits non-zero
+
+**`README.md`**
+- Expanded the GitHub Actions bot section with the exact token setup, the
+  fine-grained PAT scopes, and the repository setting required when relying on
+  the built-in token
+
+No application code was changed.
