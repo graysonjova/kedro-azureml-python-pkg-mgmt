@@ -1,4 +1,6 @@
-1 package(s) resolved by pip-compile are not listed in requirements.in:
+3 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
+  - opentelemetry-instrumentation-httpx
+  - opentelemetry-instrumentation-logging
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
