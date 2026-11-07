@@ -121,9 +121,25 @@ python scripts/audit_requirements.py \
 
 ## GitHub Actions bot
 
-The workflow (`.github/workflows/update-requirements.yml`) triggers on any push to `main` that changes `requirements.in`.
+The workflow (`.github/workflows/update-requirements.yml`) triggers on any push to `main` that changes `requirements.in`. It can also be started manually from the **Actions** tab (`workflow_dispatch`).
 
-Required repository permissions (To create a PAT and store in secrets for the repository, called with `secrets.WORKFLOW_PAT`):
+Required repository permissions:
 - `contents: write` — commit generated files to a branch
 - `pull-requests: write` — open the PR
 - `issues: write` — open a conflict Issue
+
+### Push credentials
+
+The workflow pushes its branch with `${{ secrets.WORKFLOW_PAT || github.token }}` — the PAT if you set one, otherwise the built-in `GITHUB_TOKEN`.
+
+**Using the built-in token (no secret needed):** enable
+*Settings → Actions → General → Workflow permissions → "Allow GitHub Actions to create and approve pull requests"*.
+Caveat: PRs opened by `GITHUB_TOKEN` do not trigger other `on: pull_request` workflows.
+
+**Using `WORKFLOW_PAT`** (needed if you want PR checks to run, or to push to a protected branch):
+- Fine-grained PAT: **Repository access** must include this repo, with
+  `Contents: Read and write`, `Pull requests: Read and write`, `Issues: Read and write`.
+- Classic PAT: the `repo` scope.
+- Store it under *Settings → Secrets and variables → Actions → Repository secrets* as `WORKFLOW_PAT`.
+
+A `Check push credentials` step runs right after checkout and fails fast if the token cannot push, so credential problems surface in seconds instead of at the final step.

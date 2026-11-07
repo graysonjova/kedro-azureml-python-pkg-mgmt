@@ -1,4 +1,4 @@
-Automated update to requirements files following changes to `requirements.in` in commit f91fc6898e1048f93be9a176fd0caafe83675d3e.
+Automated update to requirements files following changes to `requirements.in` in commit d0167d919f22da80da58500ed72f27cf20af61c8.
 
 **Files updated:**
 - `detailed_requirements.txt` — full pinned dependency graph (pip-compile output)
@@ -32,8 +32,10 @@ Packages that pip-compile resolved but that are not listed anywhere in `requirem
 <summary>Details</summary>
 
 ```
-1 package(s) resolved by pip-compile are not listed in requirements.in:
+3 package(s) resolved by pip-compile are not listed in requirements.in:
   - jupyter-builder
+  - opentelemetry-instrumentation-httpx
+  - opentelemetry-instrumentation-logging
 
 Add them to the appropriate 'Transitive Libraries' section of requirements.in to make the dependency explicit.
 ```
@@ -51,17 +53,24 @@ A minimal kedro pipeline and kedro-azureml import test ran against the compiled 
 
 ```
 ============================= test session starts ==============================
-platform linux -- Python 3.11.15, pytest-9.1.0, pluggy-1.6.0 -- /usr/local/py-utils/venvs/pytest/bin/python
+platform linux -- Python 3.11.18, pytest-9.2.0, pluggy-1.7.0 -- /usr/local/py-utils/venvs/pytest/bin/python
 cachedir: .pytest_cache
 rootdir: /__w/kedro-azureml-python-pkg-mgmt/kedro-azureml-python-pkg-mgmt
-plugins: mock-2.0.0, anyio-3.7.1, Faker-37.8.0, cov-6.3.0
+plugins: anyio-4.15.1, mock-2.0.0, Faker-37.8.0, cov-6.3.0
 collecting ... collected 3 items
 
 tests/smoke/test_kedro_pipeline.py::test_kedro_core_imports PASSED       [ 33%]
 tests/smoke/test_kedro_pipeline.py::test_kedro_azureml_imports PASSED    [ 66%]
 tests/smoke/test_kedro_pipeline.py::test_pipeline_runs_locally PASSED    [100%]
 
-============================== 3 passed in 0.62s ===============================
+=============================== warnings summary ===============================
+../../../usr/local/lib/python3.11/site-packages/pytest_mock/plugin.py:200
+  /usr/local/lib/python3.11/site-packages/pytest_mock/plugin.py:200: PytestRemovedIn10Warning: @pytest.yield_fixture is deprecated.
+  Use @pytest.fixture instead; they are the same.
+    @pytest.yield_fixture
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========================= 3 passed, 1 warning in 0.54s =========================
 ```
 
 </details>

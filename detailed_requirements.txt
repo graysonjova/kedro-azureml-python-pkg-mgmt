@@ -13,7 +13,7 @@ aiofiles==24.1.0
 aiohappyeyeballs==2.6.1
     # via
     #   aiohttp
-aiohttp==3.14.1
+aiohttp==3.14.5
     # via
     #   adlfs
 aiosignal==1.4.0
@@ -31,14 +31,13 @@ antlr4-python3-runtime==4.9.3
 anyconfig==0.10.1
     # via
     #   kedro-docker
-anyio==3.7.1
+anyio==4.15.1
     # via
     #   httpx
     #   jupyter-server
     #   litestar
     #   starlette
     #   watchfiles
-    #   watchgod
 appdirs==1.4.4
     # via
     #   iterative-telemetry
@@ -90,7 +89,7 @@ azure-core==1.38.0
     #   azure-storage-file-share
     #   mltable
     #   msrest
-azure-core-tracing-opentelemetry==1.0.0b12
+azure-core-tracing-opentelemetry==1.0.0b13
     # via
     #   azure-monitor-opentelemetry
 azure-datalake-store==0.0.53
@@ -105,10 +104,10 @@ azure-mgmt-core==1.6.0
     # via
     #   azure-ai-ml
     #   mltable
-azure-monitor-opentelemetry==1.8.5
+azure-monitor-opentelemetry==1.8.11
     # via
     #   azure-ai-ml
-azure-monitor-opentelemetry-exporter==1.0.0b46
+azure-monitor-opentelemetry-exporter==1.0.0b58
     # via
     #   azure-monitor-opentelemetry
 azure-storage-blob==12.27.1
@@ -124,7 +123,6 @@ azure-storage-file-share==12.26.0
     #   azure-ai-ml
 azureml-dataprep[parquet]==5.1.6
     # via
-    #   azureml-fsspec
     #   mltable
 azureml-dataprep-native==41.0.0
     # via
@@ -132,8 +130,6 @@ azureml-dataprep-native==41.0.0
 azureml-dataprep-rslex==2.22.4
     # via
     #   azureml-dataprep
-azureml-fsspec==1.3.1
-    # via -r requirements.in
 babel==2.17.0
     # via
     #   jupyterlab-server
@@ -162,7 +158,7 @@ catalogue==2.0.10
     #   spacy
     #   srsly
     #   thinc
-certifi==2024.7.4
+certifi==2026.10.23
     # via
     #   httpcore
     #   httpx
@@ -222,7 +218,7 @@ coverage[toml]==7.6.4
 cross-web==0.7.0
     # via
     #   strawberry-graphql
-cryptography==49.0.0
+cryptography==50.0.0
     # via
     #   azure-identity
     #   azure-storage-blob
@@ -247,10 +243,11 @@ decorator==5.2.1
 defusedxml==0.7.1
     # via
     #   nbconvert
+    #   nltk
 distro==1.9.0
     # via
     #   iterative-telemetry
-dnspython==2.8.0
+dnspython==2.9.0
     # via
     #   email-validator
 dynaconf==3.2.13
@@ -278,7 +275,7 @@ fastapi-cli==0.0.5
 fastjsonschema==2.21.2
     # via
     #   nbformat
-filelock==3.20.3
+filelock==4.2.4
     # via
     #   iterative-telemetry
 fonttools==4.61.0
@@ -291,20 +288,19 @@ frozenlist==1.8.0
     # via
     #   aiohttp
     #   aiosignal
-fsspec==2023.10.0
+fsspec==2026.9.0
     # via
     #   adlfs
-    #   azureml-fsspec
     #   evidently
     #   kedro
     #   kedro-viz
 gitdb==4.0.12
     # via
     #   gitpython
-gitpython==3.1.50
+gitpython==3.2.1
     # via
     #   kedro
-graphql-core==3.2.6
+graphql-core==3.3.1
     # via
     #   strawberry-graphql
 greenlet==3.2.4
@@ -333,8 +329,7 @@ idna==3.16
     #   requests
     #   yarl
 importlib-metadata==8.7.0
-    # via
-    #   opentelemetry-api
+    # via -r requirements.in
 iniconfig==2.1.0
     # via
     #   pytest
@@ -415,7 +410,7 @@ jupyter-events==0.12.0
 jupyter-lsp==2.3.0
     # via
     #   jupyterlab
-jupyter-server==2.20.0
+jupyter-server==2.21.1
     # via
     #   jupyter-lsp
     #   jupyterlab
@@ -425,7 +420,7 @@ jupyter-server==2.20.0
 jupyter-server-terminals==0.5.3
     # via
     #   jupyter-server
-jupyterlab==4.6.0
+jupyterlab==4.6.4
     # via
     #   notebook
 jupyterlab-pygments==0.3.0
@@ -448,7 +443,7 @@ kedro-azureml==1.0.0
     # via -r requirements.in
 kedro-boot==0.3.0
     # via -r requirements.in
-kedro-datasets==9.3.0
+kedro-datasets==9.6.0
     # via
     #   kedro-azureml
 kedro-docker==0.6.0
@@ -505,7 +500,7 @@ matplotlib-inline==0.1.7
 mdurl==0.1.2
     # via
     #   markdown-it-py
-mistune==3.2.1
+mistune==3.3.4
     # via
     #   nbconvert
 mltable==1.6.3
@@ -528,7 +523,7 @@ msrest==0.7.1
     # via
     #   azure-monitor-opentelemetry-exporter
     #   mltable
-multidict==6.7.0
+multidict==6.9.1
     # via
     #   aiohttp
     #   litestar
@@ -550,7 +545,7 @@ narwhals==2.15.0
 nbclient==0.10.2
     # via
     #   nbconvert
-nbconvert==7.17.1
+nbconvert==7.17.2
     # via
     #   jupyter-server
 nbformat==5.10.4
@@ -564,10 +559,10 @@ nest-asyncio==1.6.0
 networkx==3.5
     # via
     #   kedro-viz
-nltk==3.9.4
+nltk==3.10.4
     # via
     #   evidently
-notebook==7.6.0
+notebook==7.6.3
     # via -r requirements.in
 notebook-shim==0.2.4
     # via
@@ -587,13 +582,13 @@ numpy==1.26.4
     #   spacy
     #   statsmodels
     #   thinc
-oauthlib==3.3.1
+oauthlib==4.0.1
     # via
     #   requests-oauthlib
 omegaconf==2.3.0
     # via
     #   kedro
-opentelemetry-api==1.39.0
+opentelemetry-api==1.45.1
     # via
     #   azure-core-tracing-opentelemetry
     #   azure-monitor-opentelemetry-exporter
@@ -603,6 +598,8 @@ opentelemetry-api==1.39.0
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
+    #   opentelemetry-instrumentation-logging
     #   opentelemetry-instrumentation-psycopg2
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
@@ -610,58 +607,65 @@ opentelemetry-api==1.39.0
     #   opentelemetry-instrumentation-wsgi
     #   opentelemetry-sdk
     #   opentelemetry-semantic-conventions
-opentelemetry-instrumentation==0.60b0
+opentelemetry-instrumentation==0.66b1
     # via
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-dbapi
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
+    #   opentelemetry-instrumentation-logging
     #   opentelemetry-instrumentation-psycopg2
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
     #   opentelemetry-instrumentation-urllib3
     #   opentelemetry-instrumentation-wsgi
-opentelemetry-instrumentation-asgi==0.60b0
+    #   opentelemetry-resource-detector-azure
+opentelemetry-instrumentation-asgi==0.66b1
     # via
     #   opentelemetry-instrumentation-fastapi
-opentelemetry-instrumentation-dbapi==0.60b0
+opentelemetry-instrumentation-dbapi==0.66b1
     # via
     #   opentelemetry-instrumentation-psycopg2
-opentelemetry-instrumentation-django==0.60b0
+opentelemetry-instrumentation-django==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-fastapi==0.60b0
+opentelemetry-instrumentation-fastapi==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-flask==0.60b0
+opentelemetry-instrumentation-flask==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-psycopg2==0.60b0
+opentelemetry-instrumentation-httpx==0.66b1
+    # via azure-monitor-opentelemetry
+opentelemetry-instrumentation-logging==0.66b1
+    # via azure-monitor-opentelemetry
+opentelemetry-instrumentation-psycopg2==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-requests==0.60b0
+opentelemetry-instrumentation-requests==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-urllib==0.60b0
+opentelemetry-instrumentation-urllib==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-urllib3==0.60b0
+opentelemetry-instrumentation-urllib3==0.66b1
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-instrumentation-wsgi==0.60b0
+opentelemetry-instrumentation-wsgi==0.66b1
     # via
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-flask
-opentelemetry-resource-detector-azure==0.1.5
+opentelemetry-resource-detector-azure==0.3.0
     # via
     #   azure-monitor-opentelemetry
-opentelemetry-sdk==1.39.0
+opentelemetry-sdk==1.45.1
     # via
     #   azure-monitor-opentelemetry
     #   azure-monitor-opentelemetry-exporter
     #   opentelemetry-resource-detector-azure
-opentelemetry-semantic-conventions==0.60b0
+opentelemetry-semantic-conventions==0.66b1
     # via
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-asgi
@@ -669,17 +673,20 @@ opentelemetry-semantic-conventions==0.60b0
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
+    #   opentelemetry-instrumentation-logging
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
     #   opentelemetry-instrumentation-urllib3
     #   opentelemetry-instrumentation-wsgi
     #   opentelemetry-sdk
-opentelemetry-util-http==0.60b0
+opentelemetry-util-http==0.66b1
     # via
     #   opentelemetry-instrumentation-asgi
     #   opentelemetry-instrumentation-django
     #   opentelemetry-instrumentation-fastapi
     #   opentelemetry-instrumentation-flask
+    #   opentelemetry-instrumentation-httpx
     #   opentelemetry-instrumentation-requests
     #   opentelemetry-instrumentation-urllib
     #   opentelemetry-instrumentation-urllib3
@@ -737,7 +744,7 @@ patsy==0.5.6
 pexpect==4.9.0
     # via
     #   ipython
-pillow==12.2.0
+pillow==13.0.0
     # via
     #   matplotlib
 platformdirs==4.5.0
@@ -815,7 +822,7 @@ pygments==2.20.0
     #   nbconvert
     #   pytest
     #   rich
-pyjwt[crypto]==2.13.0
+pyjwt[crypto]==2.15.1
     # via
     #   azure-ai-ml
     #   mltable
@@ -861,7 +868,6 @@ pytoolconfig[global]==1.3.1
     #   rope
 pytz==2025.2
     # via
-    #   azureml-fsspec
     #   mltable
     #   pandas
 pyyaml==6.0.3
@@ -978,9 +984,8 @@ smmap==5.0.2
     #   gitdb
 sniffio==1.3.1
     # via
-    #   anyio
     #   litestar
-soupsieve==2.8
+soupsieve==2.9.2
     # via
     #   beautifulsoup4
 spacy==3.8.2
@@ -1009,7 +1014,7 @@ starlette==1.3.1
 statsmodels==0.14.4
     # via
     #   evidently
-strawberry-graphql==0.316.0
+strawberry-graphql==0.334.1
     # via
     #   kedro-viz
 strictyaml==1.7.3
@@ -1039,7 +1044,7 @@ tomli-w==1.2.0
     # via
     #   kedro
     #   kedro-telemetry
-tornado==6.5.7
+tornado==6.6
     # via
     #   ipykernel
     #   jupyter-client
@@ -1075,10 +1080,11 @@ typer==0.12.5
 types-python-dateutil==2.9.0.20250822
     # via
     #   arrow
-typing-extensions==4.15.0
+typing-extensions==4.16.0
     # via
     #   aiohttp
     #   aiosignal
+    #   anyio
     #   azure-ai-ml
     #   azure-core
     #   azure-identity
@@ -1090,6 +1096,7 @@ typing-extensions==4.15.0
     #   exceptiongroup
     #   fastapi
     #   ipython
+    #   jupyterlab
     #   kedro
     #   litestar
     #   opentelemetry-api
@@ -1119,7 +1126,7 @@ tzdata==2025.2
 uri-template==1.3.0
     # via
     #   jsonschema
-urllib3==2.7.0
+urllib3==2.8.0
     # via
     #   requests
 uvicorn[standard]==0.35.0
@@ -1143,8 +1150,6 @@ watchfiles==0.24.0
     # via
     #   kedro-viz
     #   uvicorn
-watchgod==0.8.2
-    # via -r requirements.in
 wcwidth==0.2.14
     # via
     #   prompt-toolkit
@@ -1168,9 +1173,10 @@ wrapt==1.17.3
     # via
     #   opentelemetry-instrumentation
     #   opentelemetry-instrumentation-dbapi
+    #   opentelemetry-instrumentation-httpx
     #   opentelemetry-instrumentation-urllib3
     #   smart-open
-yarl==1.22.0
+yarl==1.25.1
     # via
     #   aiohttp
 zipp==3.23.0
